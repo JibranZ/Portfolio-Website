@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Portfolio Website</title>
+    <script
+      src="https://kit.fontawesome.com/bc8e4620a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./img/logo resized.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span>Jibran </span> Zaffer<br />
+            From New York
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ---------About --------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./img/jibran-zaffer (1).png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-me">
+              I am passionate web developer fluent in JavaScript, HTML, CSS, and
+              more. I specialize in creating captivating frontend experiences
+              and have a growing interest in backend development, particularly
+              with Node.js.I thrive on challenges and love learning new
+              technologies to expand my skill set.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-End Developer</span
+                  ><br />Html,Css,JavaScript,REACT,Bootstrap,JQuery
+                </li>
+                <li>
+                  <span>Back-End Developer</span><br />Working on Backend using
+                  Node.js
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>CUNY Queens College</span><br />BA Computer Science
+                  (2019-2023)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------Services------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-End Development</h2>
+            <p>
+              skilled in HTML, CSS, JavaScript, React, Bootstrap, and jQuery.
+              With these tools, I craft engaging web experiences, from
+              structuring content with HTML to styling it beautifully with CSS.
+              JavaScript brings interactivity to life, while React streamlines
+              development with reusable components. Bootstrap ensures
+              responsiveness, and jQuery simplifies DOM manipulation. Let's
+              collaborate to create stunning digital experiences together!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Back-End Development</h2>
+            <p>
+              A budding backend developer with a focus on learning Node.js. I'm
+              excited to dive into building server-side applications, designing
+              APIs, and integrating with databases. Let's team up to explore the
+              world of backend development together!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-plus"></i>
+            <h2>Other</h2>
+            <p>
+              I use other various technologies, including Python, C++, and Java.
+              While I'm still getting my feet wet in backend development, I'm
+              also familiar with databases like MySQL and have experience with
+              ERwin Data Modeler. I'm eager to expand my knowledge and skills in
+              both frontend and backend development. Let's collaborate and learn
+              together to build awesome projects!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------Portfolio-------------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./img/drumkit.PNG" alt="" />
+            <div class="layer">
+              <h3>Drumkit</h3>
+              <p class="paragraph">
+                ●Engineered a dynamic drum kit application using HTML, CSS, and
+                JavaScript, demonstrating proficiency in front-end web
+                development. <br />
+                ● Implemented responsive design principles with HTML, CSS, and
+                JavaScript to ensure optimal functionality across various
+                devices and screen <br />
+                ● Utilized event-driven programming techniques in JavaScript to
+                enable real-time user interaction, providing an immersive
+                drumming experience within the browser.
+              </p>
+              <a href="https://jibran-drum-kit.netlify.app/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./img/simonsays.PNG" alt="" />
+            <div class="layer">
+              <h3>Simon Says Game</h3>
+              <p class="paragraph">
+                ● Developed and deployed a Simon clone game using HTML, CSS,
+                JavaScript, and jQuery, showcasing proficiency in front-end web
+                development technologies. <br />
+                ● Implemented interactive game mechanics and visual design
+                elements using CSS, JavaScript, and jQuery, resulting in an
+                engaging user experience. <br />
+                ● Demonstrated strong problem-solving skills by overcoming
+                challenges in game logic and user interaction through HTML, CSS,
+                JavaScript, and jQuery integration.
+              </p>
+              <a href="https://jibran-simon-game.netlify.app/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./img/dicegame.PNG" alt="" />
+            <div class="layer">
+              <h3>Dice Game</h3>
+              <p class="paragraph">
+                ● Engineered a dynamic drum kit application using HTML, CSS, and
+                JavaScript, demonstrating proficiency in front-end web
+                development. <br />
+                ● Implemented responsive design principles with HTML, CSS, and
+                JavaScript to ensure optimal functionality across various
+                devices and screen sizes. <br />
+                ● Utilized event-driven programming techniques in JavaScript to
+                enable real-time user interaction, providing an immersive
+                drumming experience within the browser.
+              </p>
+              <a href="https://simple-dice-game-01.netlify.app/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- ---------------Contact------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> jzaff12345@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> (646)-254-2826</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/jibran-zaffer-93a7a2189/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/JibranZ"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/_pakmanj_?igsh=eXR0ZGFrbjV3a256&utm_source=qr"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="./JibranZafferResume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+
+      var sideMenu = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sideMenu.style.right = "0";
+      }
+      function closeMenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyBlzsMPfd6iQftt-IiWRL25cQqO4XLp-Co8dR0e-9h9Av_llXHyUevglYJB5iwRSI7/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message has been sent";
+            setTimeout(function () {
+              msg.innerHtml = "Message sent successfully";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
